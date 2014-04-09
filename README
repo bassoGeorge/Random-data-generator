@@ -1,12 +1,27 @@
-----------------------------------------------------------------
 RandomInputGenerator version 2.2
+----------------------------------------------------------------
 
 Developed by Anish 'basso' George
-----------------------------------------------------------------
 
    This program generates random dataset for testing algorithms
 and applications. It has the ability to create Data in a variety
-of formats depending on your requirements. Typical usage :
+of formats depending on your requirements. 
+
+Deployment
+----------------------------------------------------------------
+I have provided two jars for use, (in the target folder)
+1. randinput.jar is the actual application, since this tool is
+    developed using Scala language, you need to have scala installed
+    on your system to run this .jar file (by using the 'scala' interpretter)
+    or you need the scala library jar in your class path for use with 
+    java
+2. randinputscala.jar is for those who don't have scala, this is a 
+    make-shift jar including the core scala library as well so will be
+    a bit heavier than the pure application but on the other hand, you
+    simply use this with your JRE
+
+Typical usage :
+----------------------------------------------------------------
 (Assuming the standard randinputscala.jar deployment)
 
 1. Creating a dataset of 50 randomly generated Integers in range
@@ -22,15 +37,15 @@ java -jar randinputscala.jar -S -n 100 --fix=20
 
 3. Creating a dataset of 100 Decimal numbers with max precision
 of 4 digits after decimal point and within range [0,20.5] and
-making 2 files of such data (file1.txt and file2.txt) java -jar
+making 2 files of such data (file1.txt and file2.txt) 
 
-randinputscala.jar -D -n 100 --min=0 --max=20.5 -f file1.txt
+java -jar randinputscala.jar -D -n 100 --min=0 --max=20.5 -f file1.txt
 file2.txt
 
 4. Creating a dataset of 100 randomly selected characters, all
 capitals java -jar randinputscala.jar -C -n 100 --allcaps
 
-----------------------------------------------------------------------
+
 Complete Usage Documentation
 ----------------------------------------------------------------------
 

@@ -10,40 +10,40 @@ of formats depending on your requirements.
 Deployment
 ----------------------------------------------------------------
 I have provided two jars for use, (in the target folder)
-1. randinput.jar is the actual application, since this tool is
+1. randGen.jar is the actual application, since this tool is
     developed using Scala language, you need to have scala installed
     on your system to run this .jar file (by using the 'scala' interpretter)
     or you need the scala library jar in your class path for use with 
     java
-2. randinputscala.jar is for those who don't have scala, this is a 
+2. randGenScala.jar is for those who don't have scala, this is a 
     make-shift jar including the core scala library as well so will be
     a bit heavier than the pure application but on the other hand, you
     simply use this with your JRE
 
 Typical usage :
 ----------------------------------------------------------------
-(Assuming the standard randinputscala.jar deployment)
+(Assuming the standard randGenScala.jar deployment)
 
 1. Creating a dataset of 50 randomly generated Integers in range
 [-30,150] on a file named data.txt 
 
-java -jar randinputscala.jar -I -n 50 --min=-30 --max=150 -f data.txt
+java -jar randGenScala.jar -I -n 50 --min=-30 --max=150 -f data.txt
 
 2. Creating a dataset of 100 Strings of length 20 each, including
 alphanumerics and special characters and outputting this data to
 screen 
 
-java -jar randinputscala.jar -S -n 100 --fix=20
+java -jar randGenScala.jar -S -n 100 --fix=20
 
 3. Creating a dataset of 100 Decimal numbers with max precision
 of 4 digits after decimal point and within range [0,20.5] and
 making 2 files of such data (file1.txt and file2.txt) 
 
-java -jar randinputscala.jar -D -n 100 --min=0 --max=20.5 -f file1.txt
+java -jar randGenScala.jar -D -n 100 --min=0 --max=20.5 -f file1.txt
 file2.txt
 
 4. Creating a dataset of 100 randomly selected characters, all
-capitals java -jar randinputscala.jar -C -n 100 --allcaps
+capitals java -jar randGenScala.jar -C -n 100 --allcaps
 
 
 Complete Usage Documentation
@@ -51,7 +51,7 @@ Complete Usage Documentation
 
 SYNOPSIS 
 
-java -jar randinputscala.jar [-I|-D|-C|-S] [Options] [-f file1 file2.. ]
+java -jar randGenScala.jar [-I|-D|-C|-S] [Options] [-f file1 file2.. ]
 
 DATA MODES: 
 -I : Integer 

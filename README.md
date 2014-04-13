@@ -1,5 +1,4 @@
-RandomInputGenerator version 2.2
-----------------------------------------------------------------
+# RandomInputGenerator version 2.2
 
 Developed by Anish 'basso' George
 
@@ -7,8 +6,8 @@ Developed by Anish 'basso' George
 and applications. It has the ability to create Data in a variety
 of formats depending on your requirements. 
 
-Deployment
-----------------------------------------------------------------
+### Deployment
+
 I have provided two jars for use, (in the target folder)
 1. randGen.jar is the actual application, since this tool is
     developed using Scala language, you need to have scala installed
@@ -20,8 +19,8 @@ I have provided two jars for use, (in the target folder)
     a bit heavier than the pure application but on the other hand, you
     simply use this with your JRE
 
-Typical usage :
-----------------------------------------------------------------
+### Typical usage :
+
 (Assuming the standard randGenScala.jar deployment)
 
 1. Creating a dataset of 50 randomly generated Integers in range
@@ -46,20 +45,20 @@ file2.txt
 capitals java -jar randGenScala.jar -C -n 100 --allcaps
 
 
-Complete Usage Documentation
-----------------------------------------------------------------------
+## Complete Usage Documentation
 
-SYNOPSIS 
+
+#### SYNOPSIS 
 
 java -jar randGenScala.jar [-I|-D|-C|-S] [Options] [-f file1 file2.. ]
 
-DATA MODES: 
+##### DATA MODES: 
 -I : Integer 
 -D : Decimal, Double precision floating point data 
 -C : Character 
 -S : String
 
-STYLE OPTION: 
+##### STYLE OPTION: 
 --General : Default, simple syle, put words onto file 
 
 --CodeJam : Style following input data style of Google Code
@@ -67,7 +66,7 @@ STYLE OPTION:
             each line preceded by a line telling 'number' of words 
             on the line
 
-Major Options 
+##### Major Options 
 -n : followed by the total # of words e.g. -n 40
 -f : Should be the last option, followed by a list of output
       filenames e.g. -f data1.txt temp_data.txt Note: 1. Each 
@@ -81,27 +80,27 @@ Major Options
 -m : Available only in --CodeJam mode, Minimum # of words on a
       line e.g. -m 2
 
-Data Specific Options 
-INTEGER: 
+##### Data Specific Options 
+######INTEGER: 
 --max=<n> : Upper bound of data,
                e.g. --max=32                    [Default -> 100] 
 --min=<n> : Lower bound of data,
                e.g. --min=-10                   [Default -> 0]
 
-DECIMAL: 
+###### DECIMAL: 
 --max=<n> : Upper bound of data, 
                e.g. --max=100.3                 [Default -> 1.0] 
 --min=<n> : Lower bound of data                 [Default -> 0.0] 
 --prec=<n>: Precision, max # of digits after decimal point. 
                e.g. --prec=5                    [Default -> 3]
 
-STRING: 
+###### STRING: 
 --max=<n> : Max size of string (in characters)  [Default -> 50] 
 --min=<n> : Min size of string                  [Default -> 2] 
 --prefix=<str>: Prefix to add to every string 
 --suffix=<str>: Suffix to add to every string
 
-Common options to String and Char modes 
+###### Common options to String and Char modes 
 --caps : Allow capitals
 --allcaps : No smalls, overrides --caps 
 --nums : Allow Numerics
@@ -109,6 +108,6 @@ Common options to String and Char modes
                option is provided] 
 --spchars : Allow Special Characters
 
-Update Log:
+###### Update Log:
 
 v 2.2: Fixed major bug; finalised the Generator package's API

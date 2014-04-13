@@ -1,6 +1,6 @@
 # RandomInputGenerator version 2.2
 
-Developed by Anish 'basso' George
+Developed by [Anish 'basso' George](www.blog.anishgeorge.com)
 
    This program generates random dataset for testing algorithms
 and applications. It has the ability to create Data in a variety
@@ -9,11 +9,13 @@ of formats depending on your requirements.
 ### Deployment
 
 I have provided two jars for use, (in the target folder)
+
 1. randGen.jar is the actual application, since this tool is
     developed using Scala language, you need to have scala installed
     on your system to run this .jar file (by using the 'scala' interpretter)
     or you need the scala library jar in your class path for use with 
     java
+
 2. randGenScala.jar is for those who don't have scala, this is a 
     make-shift jar including the core scala library as well so will be
     a bit heavier than the pure application but on the other hand, you
@@ -70,8 +72,9 @@ java -jar randGenScala.jar [-I|-D|-C|-S] [Options] [-f file1 file2.. ]
 -n : followed by the total # of words e.g. -n 40
 
 -f : Should be the last option, followed by a list of output
-      filenames e.g. -f data1.txt temp_data.txt Note: 1. Each 
-      seperate file will recieve a new randomly generated data
+      filenames e.g. -f data1.txt temp_data.txt 
+      
+Note: 1. Each seperate file will recieve a new randomly generated data
       set 2. If -f flag is not present, data will be outputted 
       to the console
 

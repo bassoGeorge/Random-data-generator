@@ -68,6 +68,7 @@ java -jar randGenScala.jar [-I|-D|-C|-S] [Options] [-f file1 file2.. ]
 
 ##### Major Options 
 -n : followed by the total # of words e.g. -n 40
+
 -f : Should be the last option, followed by a list of output
       filenames e.g. -f data1.txt temp_data.txt Note: 1. Each 
       seperate file will recieve a new randomly generated data
@@ -84,28 +85,38 @@ java -jar randGenScala.jar [-I|-D|-C|-S] [Options] [-f file1 file2.. ]
 ######INTEGER: 
 --max=<n> : Upper bound of data,
                e.g. --max=32                    [Default -> 100] 
+
 --min=<n> : Lower bound of data,
                e.g. --min=-10                   [Default -> 0]
 
 ###### DECIMAL: 
 --max=<n> : Upper bound of data, 
                e.g. --max=100.3                 [Default -> 1.0] 
+
 --min=<n> : Lower bound of data                 [Default -> 0.0] 
+
 --prec=<n>: Precision, max # of digits after decimal point. 
                e.g. --prec=5                    [Default -> 3]
 
 ###### STRING: 
 --max=<n> : Max size of string (in characters)  [Default -> 50] 
+
 --min=<n> : Min size of string                  [Default -> 2] 
+
 --prefix=<str>: Prefix to add to every string 
+
 --suffix=<str>: Suffix to add to every string
 
 ###### Common options to String and Char modes 
 --caps : Allow capitals
+
 --allcaps : No smalls, overrides --caps 
+
 --nums : Allow Numerics
+
 --noalphas: NO alphabets [Defaults to adding spchars if no other
                option is provided] 
+
 --spchars : Allow Special Characters
 
 ###### Update Log:
